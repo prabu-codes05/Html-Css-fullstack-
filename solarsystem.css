@@ -1,0 +1,97 @@
+body{
+    background-color:black;
+}
+
+.sun{
+    width:80px;
+    height:80px;
+    background:yellow;
+     border-radius:50%;
+     position:absolute;
+      top:260px;
+    left:260px;
+}
+
+.mercury{
+
+    width:20px;
+    height:20px;
+    background:gray;
+    border-radius:50%;
+    position: absolute;
+    top:65px;
+     left:-10px;
+}
+
+.mercury-orbit{
+     width:150px;
+    height:150px;
+      border:1px solid white;
+    border-radius:50%;
+    position:absolute;
+    top:225px;
+    left:225px;
+    animation:rotate 5s linear infinite;
+
+}
+
+.venus{
+
+    width:30px;
+    height:30px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:100px;
+    left:-12px;
+
+}
+.venus-orbit{
+     width:230px;
+    height:230px;
+
+    border:2px solid white;
+    border-radius:50%;
+
+    position:absolute;
+
+    top:185px;
+    left:185px;
+
+    animation:rotate 8s linear infinite;
+
+}
+
+.earth{
+
+    width:30px;
+    height:30px;
+    background:blue;
+    border-radius:50%;
+    position:absolute;
+    top:145px;
+    left:-15px;
+}
+
+.earth-orbit{
+
+    width:320px;
+    height:320px;
+    border:2px solid white;
+    border-radius:50%;
+    position:absolute;
+    top:140px;
+    left:140px;
+    animation:rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+

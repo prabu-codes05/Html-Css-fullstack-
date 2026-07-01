@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a{
+      text-decoration: none;
+    }
+
+    li{
+      list-style: none;
+    }
+
+    nav{
+      background-color: green;
+      color: white;
+      padding: 10px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    nav .logo-container .logo{
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+    nav .links{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap:32px;
+
+    }
+
+    nav .links ul{
+      display: flex;
+      gap: 30px;
+    }
+
+    nav .links ul li a {
+      color:white
+    }
+
+    .hamburger{
+      display: none;
+      gap: 6px;
+      flex-direction: column;
+    }
+
+    .hamburger span{
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      border-radius: 16px;
+    }
+
+    @media(max-width: 977px){
+      .hamburger{
+        display: flex;
+      }
+
+      nav .links{
+        display: block;
+        justify-content: start;
+        position:absolute;
+        top:56px;
+        padding: 0px 20px;
+        background-color: green;
+      }
+
+      nav .links ul{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+   </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo-container">
+      <div class="logo">LOGOOO</div>
+    </div>
+
+    <div class="links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="btn">
+        <button>Get Started</button>
+      </div>
+
+    </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+  </nav>
+
+</body>
+
+</html>
