@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards{
+            background-color: green;
+            display: flex;
+            margin: 20px;
+            padding: 20px;
+          /*  flex-direction: row-reverse;*/
+           /* flex-direction:column-reverse;*/
+           justify-content: center;
+           /*justify-content: space-between;*/
+           /*justify-content: space-around;*/
+           /*justify-content: flex-start;*/
+           /*justify-content: flex-end;*/
+           height: 200px;
+           /*align-items: center;*/
+           /*align item: flex-start;*/
+           /*align-items: flex-end;*/
+        }
+        .card{
+            margin:10px;
+            padding: 20px;
+            
+        }
+
+        .card1{
+             background-color: lightseagreen;
+             align-self: flex-start;
+            /* align-self: flex-end;*/
+            }
+
+
+        .card2{
+             background-color: lightcoral;
+            /* order:1;*/
+            
+            }
+
+
+        .card3{
+             background-color: lightblue;
+             /*order: -1*/
+            }
+
+
+        .card4{ 
+            background-color: lightpink;
+           /* flex-grow: 1;*/
+
+        
+        }
+
+    
+        
+       
+    </style>
+</head>
+<body>
+     <div class="cards">
+        <div class="card card1">cards</div>
+        <div class="card card2">cards</div>
+        <div class="card card3">cards</div>
+        <div class="card card4">cards</div>
+    </div>
+    
+</body>
+</html>
