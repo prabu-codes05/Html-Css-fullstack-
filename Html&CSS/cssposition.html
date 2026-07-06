@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        .icon{
+            background-color: red;
+            color: white;
+            padding: 48px;
+        }
+
+        .icon .fa-heart{
+            font-size: 80px;
+            animation: syc 3s infinite;
+        }
+
+        @keyframes syc{
+            from{
+                transform: scale(0.4,0.4);
+            }
+            to{ 
+                transform: scale(1.4,1.4);
+            }
+        }
+
+
+        .circle{
+            height: 100vh;
+            border-bottom: 2px solid #000000;
+            position: relative;
+        }
+        .circle .cular{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: linear-gradient(0deg,rgba(89, 136, 189, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            margin:5px 20px;
+            animation: bounce 10s linear infinite;
+        }
+
+
+        @keyframes bounce{
+            0%{
+                transform: rotate(0deg);
+                position: absolute;
+                top:0;
+                left:0;
+                transform: scale(.6,.6)
+            }
+
+            10%{
+                transform: rotate(360deg);
+                position: absolute;
+                top:80%;
+                left:10%;
+                transform: scale( 1.4,1.4)
+            }
+
+            20%{
+                transform: rotate(0deg);
+                position: absolute;
+                top:10%;
+                left:20%;
+                transform: scale( .6,.6)
+
+            }
+
+            30%{
+                transform: rotate(360deg);
+                position: absolute;
+                top:80%;
+                left:30%;
+                 transform: scale( 1.4,1.4)
+
+            }
+             40%{
+                transform: rotate(0deg);
+                position: absolute;
+                top:35%;
+                left:35%;
+                transform: scale( 0.6,.6)
+
+            }
+             50%{
+                transform: rotate(360deg);
+                position: absolute;
+                top:80%;
+                left:40%;
+                transform: scale( 1.4,1.4)
+
+            }
+
+             60%{
+                transform: rotate(0deg);
+                position: absolute;
+                top:50%;
+                left:50%;
+               transform: scale( .6,.6)
+
+            }
+
+             70%{
+                transform: rotate(360deg);
+                position: absolute;
+                top:80%;
+                left:60%;
+                transform: scale( 1.4,1.4)
+
+            }
+
+             80%{
+                transform: rotate(0deg);
+                position: absolute;
+                top:70%;
+                left:70%;
+                transform: scale( .6,.6)
+
+            }
+
+             90%{
+                transform: rotate(360deg);
+                position: absolute;
+                top:80%;
+                left:80%;
+                transform: scale( 1.4,1.4)
+
+            }
+
+            100%{
+                transform: rotate(0);
+                position: absolute;
+                top:100%;
+                left:100%
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="icon">
+        <i class="fa fa-heart"></i>
+    </div>
+
+
+    <div class="circle">
+        <div class="cular"></div>
+    </div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .cards{
+        background-color: green;
+        margin: 20px;
+        padding: 20px;
+        display: grid;
+        /*grid-template-columns: repeat(4,1fr);*/
+        /*grid-template-columns:100px 200px 300px 400px;*/
+        /*grid-template-columns:1fr 1fr 1fr 1fr;*/
+       /* grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        grid-template-rowss: 2fr 1fr 3fr;*/
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows:1fr 10fr 1fr;
+        grid-template-areas:
+        "sidebar header header"
+        "sidebar contents contents"
+        "sidebar footer footer"
+
+
+
+    }
+
+          .card{
+            margin:10px;
+            padding: 30px;  
+        }
+
+        .card1{
+            background-color: lightseagreen;
+            grid-area: header;
+            align-items: flex-end;
+
+        }
+
+         .card2{
+            background-color: lightcoral;
+            grid-area: sidebar;
+        }
+
+         .card3{
+            background-color: lightblue;
+            grid-area: contents;
+            
+        }
+
+         .card4{
+            background-color: lightpink;
+            grid-area: footer;
+        }
+
+         .card5{
+            background-color:lightgoldenrodyellow ;
+            
+        }
+
+         .card6{
+            background-color:blue ;
+            
+        }
+
+        .card7{
+            background-color: pink;
+            
+        }
+
+        .card8{
+            background-color: yellow;
+        }
+
+        .card9{
+            background-color: tomato;
+        }
+
+        .card10{
+            background-color: orangered;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <div class="cards">
+        <div class="card card1">cards</div>
+        <div class="card card2">cards</div>
+        <div class="card card3">cards</div>
+        <div class="card card4">cards</div>
+        <div class="card card5">cards</div>
+        <div class="card card6">cards</div>
+        <div class="card card7">cards</div>
+        <div class="card card8">cards</div>
+        <div class="card card9">cards</div>
+        <div class="card card10">cards</div>
+    </div>
+    
+    
+</body>
+</html>
