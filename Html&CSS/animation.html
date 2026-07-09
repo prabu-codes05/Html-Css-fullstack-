@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards {
+            background-color: green;
+            margin:20px;
+            padding:20px;  
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around;        
+        }
+
+
+        .card{
+            margin: 10px;
+            padding: 30px;
+            animation: animate ease-in;
+            animation-timeline: view();
+        }
+
+        @keyframes animate{
+            from{
+              opacity: 0;  
+              transform: translate(-100px, -100px);
+              transform: scale(.5,.5);
+            }
+            to{
+                opacity: 1;
+                transform: translate(100px, 100px);
+                transform: translate(1,1);
+            }
+        }
+
+        .card1{ 
+            background-color: lightseagreen; 
+            height: 100px;
+            width: 200px;
+        }
+        .card2{ 
+            background-color: lightcoral; 
+            height: 100px;
+            width: 500px;
+        }
+        .card3{ 
+            background-color: lightblue; 
+            height: 100px;
+            width: 300px;
+        }
+        .card4{ 
+            background-color: lightpink;
+            height:100px;
+            width: 350px;
+        }
+        .card5{ 
+            background-color: lightgoldenrodyellow; 
+            height:100px;
+            width: 500px;
+        }
+        .card6{ 
+            background-color: blue;
+            height:100px;
+            width: 650px;
+        }
+        .card7{ 
+            background-color: pink;
+            height:100px;
+            width: 400px; 
+        }
+        .card8{ 
+            background-color: yellow; 
+            height:100px;
+            width: 350px;
+        }
+        .card9{ 
+            background-color: tomato;
+            height:100px;
+            width: 500px;
+        }
+        .card10{ 
+            background-color: orangered;
+            height:100px;
+            width: 450px; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+     <div class="cards">
+        <div class="card card1">  </div>
+        <div class="card card2">  </div>
+        <div class="card card3"></div>
+        <div class="card card4"></div>
+        <div class="card card5"></div>
+        <div class="card card6"></div>
+        <div class="card card7"></div>
+        <div class="card card8"></div>
+        <div class="card card9"></div>
+        <div class="card card10"></div>
+        <div class="card card1"> </div>
+        <div class="card card2"> </div>
+        <div class="card card3"></div>
+        <div class="card card4"></div>
+        <div class="card card5"></div>
+        <div class="card card7"></div>
+        <div class="card card8"></div>
+        <div class="card card9"></div>
+        <div class="card card10"></div>
+        <div class="card card1">  </div>
+         <div class="card card10"></div>
+        <div class="card card1">  </div>
+        <div class="card card2">  </div>
+        <div class="card card3"></div>
+        <div class="card card4"></div>
+        <div class="card card5"></div>
+        <div class="card card7"></div>
+
+    </div>
+
+</body>
+</html>
