@@ -39,3 +39,4 @@ console.log(true || false || true || true) // or operator
 console.log(3>2 ? "true":"false")
 let age = 22
 console.log(age>18?"adult":"not adult")
+console.log(age>18?"can vote":"cannot vote")
